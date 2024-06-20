@@ -142,13 +142,18 @@
         }
 
         footer {
-            background-color: #FFA500; /* Warna oranye untuk footer */
+            background-color: #FFA500;
+            /* Warna oranye untuk footer */
             text-align: center;
             padding: 20px;
-            border-radius: 30px;
-            margin: 20px auto 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
         }
 
+        /* CSS untuk teks di dalam footer */
         footer p {
             color: #fff;
             font-family: 'Montserrat', sans-serif;
@@ -158,53 +163,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <a href="homepage.php"><img src="logo.png" alt="UPINFO Logo"></a>
-            </div>
-
-            <div class="nav-container">
-                <div class="nav">
-                    <div class="dropdown">
-                        <a href="about.php" class="dropbtn">About</a>
-                    </div>
-
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn">Kuliner</a>
-                        <div class="dropdown-content">
-                            <a href="#">Makanan</a>
-                            <a href="#">Minuman</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn">Otomotif</a>
-                        <div class="dropdown-content">
-                            <a href="#">Bengkel</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn">Toko/Warung</a>
-                        <div class="dropdown-content">
-                            <a href="#">Warung Madura</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn">Layanan & Jasa</a>
-                        <div class="dropdown-content">
-                            <a href="#">Percetakan</a>
-                            <a href="#">Laundry</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="user-container">
-                <i class="fas fa-user"></i>
-            </div>
-        </div>
+    <?php include 'navbar.php'; ?>
         <div class="about-section">
             <div class="about-text">
                 <h1>About Us</h1>
@@ -217,11 +176,11 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="Assets/abt.png" alt="About Us Image">
+                <img src="abt.png" alt="About Us Image">
             </div>
         </div>
         <footer>
-            <p>&copy; 2024 <b>UPiNFO</b>. All rights reserved.</p>
+            <p>&copy; 2024 <b>UPiNFO.</b> All rights reserved.</p>
         </footer>
     </div>
 </body>
